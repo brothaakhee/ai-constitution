@@ -177,3 +177,21 @@ Projects may add a local overlay that refines or extends these rules. Recommende
 - A skills registry for tool-specific skills and paths.
 
 Local overlays must not contradict this document unless the user explicitly approves the exception.
+
+---
+
+# Django Backend Rules
+
+All Django commands must run inside Docker.
+
+Never run Django commands directly on the host machine.
+
+Use:
+
+docker compose exec web python manage.py <command>
+
+Examples:
+
+docker compose exec web python manage.py migrate
+docker compose exec web python manage.py shell
+docker compose exec web python manage.py createsuperuser
