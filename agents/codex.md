@@ -14,7 +14,7 @@ This file adds Codex-specific operating constraints on top of `AGENTS.md`.
 - If a command fails due to sandbox restrictions, request escalation.
 
 ## Skills
-- Codex skills live in `/Users/HHai/.codex/skills`.
+- Codex skills typically live in `~/.codex/skills`.
 - If a skill is named or clearly matches the task, you must use it for that turn.
 
 ## Web Access

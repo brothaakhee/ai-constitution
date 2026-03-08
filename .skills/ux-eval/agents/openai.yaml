@@ -1,0 +1,7 @@
+interface:
+  display_name: "UX Eval"
+  short_description: "World-class product UX review"
+  default_prompt: "Use $ux-eval to review this UI strictly from the end-user perspective and return prioritized UX and UI findings."
+
+policy:
+  allow_implicit_invocation: true

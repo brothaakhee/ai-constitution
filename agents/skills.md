@@ -1,25 +1,30 @@
 # Skills Registry
 
-Use this as a shared, tool-agnostic catalog of available skills.
+This repository ships portable skills directly in `.skills/`.
 
 ## Format
-Each skill entry should include:
+Each skill entry includes:
 - name
 - description
 - path
 - tool_compatibility
 - scope
 
-## Example
-name: feature-dev-loop
-description: Plan-first, TDD loop for non-trivial features
-path: .skills/feature-dev-loop/SKILL.md
-tool_compatibility: claude, codex
-scope: repository
-
 ## Registry
-- name:
-- description:
-- path:
-- tool_compatibility:
-- scope:
+- name: dev-loop
+  description: Plan-first, red-green TDD workflow for non-trivial feature work, ending with a staff-level review pass.
+  path: .skills/dev-loop/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository
+
+- name: orchestrator
+  description: Coordination layer for multi-step or cross-cutting work that delegates scoped tasks and invokes dev-loop when needed.
+  path: .skills/orchestrator/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository
+
+- name: ux-eval
+  description: End-user UX and UI evaluation workflow for rendered products, with bundled heuristics and Playwright scaffolding.
+  path: .skills/ux-eval/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository

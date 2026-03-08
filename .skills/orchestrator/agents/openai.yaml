@@ -1,0 +1,7 @@
+interface:
+  display_name: "Orchestrator"
+  short_description: "Coordinate multi-step feature delivery"
+  default_prompt: "Use $orchestrator to break this work into scoped slices, delegate where useful, invoke $dev-loop for non-trivial implementation, and return a merge-ready result."
+
+policy:
+  allow_implicit_invocation: true

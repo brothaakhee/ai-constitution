@@ -1,0 +1,7 @@
+interface:
+  display_name: "Dev Loop"
+  short_description: "Plan-first TDD feature workflow"
+  default_prompt: "Use $dev-loop for this non-trivial feature and drive it through clarification, red-green TDD, verification, and a staff-level review pass."
+
+policy:
+  allow_implicit_invocation: true
