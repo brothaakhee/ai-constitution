@@ -28,3 +28,9 @@ Each skill entry includes:
   path: .skills/ux-eval/SKILL.md
   tool_compatibility: claude, codex
   scope: repository
+
+- name: e2e-loop
+  description: End-to-end test workflow that plans user stories for approval, implements approved coverage, and iterates on failures until the relevant tests pass.
+  path: .skills/e2e-loop/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository

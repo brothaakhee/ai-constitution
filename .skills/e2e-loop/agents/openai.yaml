@@ -1,0 +1,7 @@
+interface:
+  display_name: "E2E Loop"
+  short_description: "Plan, build, and stabilize end-to-end tests"
+  default_prompt: "Use $e2e-loop to plan end-to-end user stories for approval, implement the approved tests, and iterate until the relevant e2e suite passes."
+
+policy:
+  allow_implicit_invocation: true

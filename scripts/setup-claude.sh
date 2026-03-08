@@ -12,6 +12,7 @@ Claude setup
 
 2) This repo already contains portable skills in:
    - $ROOT_DIR/.skills/dev-loop
+   - $ROOT_DIR/.skills/e2e-loop
    - $ROOT_DIR/.skills/orchestrator
    - $ROOT_DIR/.skills/ux-eval
 

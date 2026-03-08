@@ -24,6 +24,7 @@ Codex setup
 
 2) Repo skills have been linked into:
    - $SKILLS_DIR/dev-loop
+   - $SKILLS_DIR/e2e-loop
    - $SKILLS_DIR/orchestrator
    - $SKILLS_DIR/ux-eval
 
@@ -32,6 +33,7 @@ Codex setup
 
 4) In a new Codex session, you can invoke:
    - \$dev-loop
+   - \$e2e-loop
    - \$orchestrator
    - \$ux-eval
 MSG

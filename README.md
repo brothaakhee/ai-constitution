@@ -36,6 +36,7 @@ Then, in a new Claude session, say:
 - `dev-loop`: plan-first, TDD-oriented workflow for non-trivial implementation work
 - `orchestrator`: coordination skill for multi-step or cross-cutting delivery
 - `ux-eval`: UX and UI evaluation skill with heuristics and Playwright scaffolding
+- `e2e-loop`: approval-gated end-to-end testing workflow for user stories and user flows
 
 ## Repo Layout
 - `AGENTS.md`: universal operating rules
@@ -45,6 +46,7 @@ Then, in a new Claude session, say:
 - `.skills/dev-loop/`: portable `dev-loop` skill
 - `.skills/orchestrator/`: portable `orchestrator` skill
 - `.skills/ux-eval/`: portable `ux-eval` skill with references and scripts
+- `.skills/e2e-loop/`: portable `e2e-loop` skill with framework-selection and reporting references
 - `scripts/`: setup helpers
 
 ## Recommended Project Integration
