@@ -33,6 +33,7 @@ Then, in a new Claude session, say:
 - “Open `~/ai-constitution/AGENTS.md` and `~/ai-constitution/agents/claude.md`. Use them as the operating rules.”
 
 ## Included Skills
+- `copy-expert`: review-focused copy, messaging, and brand language analysis
 - `dev-loop`: plan-first, TDD-oriented workflow for non-trivial implementation work
 - `orchestrator`: coordination skill for multi-step or cross-cutting delivery
 - `ux-eval`: UX and UI evaluation skill with heuristics and Playwright scaffolding
@@ -43,6 +44,7 @@ Then, in a new Claude session, say:
 - `agents/claude.md`: Claude overlay
 - `agents/codex.md`: Codex overlay
 - `agents/skills.md`: skills registry
+- `.skills/copy-expert/`: portable `copy-expert` skill with messaging review references
 - `.skills/dev-loop/`: portable `dev-loop` skill
 - `.skills/orchestrator/`: portable `orchestrator` skill
 - `.skills/ux-eval/`: portable `ux-eval` skill with references and scripts

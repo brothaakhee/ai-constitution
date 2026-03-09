@@ -1,0 +1,7 @@
+interface:
+  display_name: "Copy Expert"
+  short_description: "Review branding, messaging, and product copy"
+  default_prompt: "Use $copy-expert to review this product's copy, messaging, and brand language, then return prioritized suggestions without directly rewriting the product by default."
+
+policy:
+  allow_implicit_invocation: true

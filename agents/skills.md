@@ -34,3 +34,9 @@ Each skill entry includes:
   path: .skills/e2e-loop/SKILL.md
   tool_compatibility: claude, codex
   scope: repository
+
+- name: copy-expert
+  description: Messaging and branding review workflow that evaluates wording, tone, trust, persuasion, and clarity, then returns concrete suggestions without rewriting by default.
+  path: .skills/copy-expert/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository
