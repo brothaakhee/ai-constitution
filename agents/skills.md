@@ -40,3 +40,9 @@ Each skill entry includes:
   path: .skills/copy-expert/SKILL.md
   tool_compatibility: claude, codex
   scope: repository
+
+- name: bug-review
+  description: Three-pass adversarial bug review workflow that uses a finder, challenger, and referee pass to identify the most credible bugs across all bug types.
+  path: .skills/bug-review/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository

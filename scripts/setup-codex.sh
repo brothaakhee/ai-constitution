@@ -23,6 +23,7 @@ Codex setup
    - $ROOT_DIR/agents/codex.md
 
 2) Repo skills have been linked into:
+   - $SKILLS_DIR/bug-review
    - $SKILLS_DIR/copy-expert
    - $SKILLS_DIR/dev-loop
    - $SKILLS_DIR/e2e-loop
@@ -33,6 +34,7 @@ Codex setup
    ln -sfn "$ROOT_DIR/agents/skills.md" "$CODEX_HOME/skills-registry.md"
 
 4) In a new Codex session, you can invoke:
+   - \$bug-review
    - \$copy-expert
    - \$dev-loop
    - \$e2e-loop

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Bug Review"
+  short_description: "Adversarial multi-pass bug triage"
+  default_prompt: "Use $bug-review to run a finder, challenger, and referee pass over this target, then return only the most credible bugs with evidence and confidence."
+
+policy:
+  allow_implicit_invocation: true

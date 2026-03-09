@@ -33,6 +33,7 @@ Then, in a new Claude session, say:
 - “Open `~/ai-constitution/AGENTS.md` and `~/ai-constitution/agents/claude.md`. Use them as the operating rules.”
 
 ## Included Skills
+- `bug-review`: adversarial multi-pass bug identification and triage across all bug types
 - `copy-expert`: review-focused copy, messaging, and brand language analysis
 - `dev-loop`: plan-first, TDD-oriented workflow for non-trivial implementation work
 - `orchestrator`: coordination skill for multi-step or cross-cutting delivery
@@ -44,6 +45,7 @@ Then, in a new Claude session, say:
 - `agents/claude.md`: Claude overlay
 - `agents/codex.md`: Codex overlay
 - `agents/skills.md`: skills registry
+- `.skills/bug-review/`: portable `bug-review` skill with severity and reporting references
 - `.skills/copy-expert/`: portable `copy-expert` skill with messaging review references
 - `.skills/dev-loop/`: portable `dev-loop` skill
 - `.skills/orchestrator/`: portable `orchestrator` skill
