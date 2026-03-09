@@ -21,7 +21,7 @@ Do not use this skill for code review, implementation review, or architecture re
 2. Evaluate only the running product, not the code.
 3. Prefer a provided URL. If none is provided, discover the lightest-weight way to run the UI locally.
 4. Interact with the product like a real user, not like a DOM or component inspector.
-5. Capture screenshots for concrete findings.
+5. Capture screenshots for concrete findings, and capture a screen recording when the issue depends on motion, timing, or a multi-step interaction.
 6. Return findings ordered by severity and user impact.
 
 ## Inputs to gather
@@ -51,9 +51,9 @@ Do not comment on source code quality unless the user explicitly asks for a sepa
 
 ## Tooling
 Prefer the bundled Playwright scaffold in `scripts/` when Node.js and Playwright are available.
-Use screenshots as evidence for concrete issues.
+Use screenshots as evidence for concrete issues and include clickable links to those artifacts in the final report.
 Use mobile emulation when the requested scope includes mobile.
-Use trace capture only when a flow is difficult to explain without it.
+Use screen recording or trace capture when a flow is difficult to explain with static screenshots alone.
 
 Read references only as needed:
 - `references/heuristics.md` for review dimensions and standards
@@ -65,7 +65,7 @@ Read references only as needed:
 3. Launch the app or open the provided URL.
 4. Walk through the primary user journey end to end.
 5. Evaluate UI and UX together, but report them distinctly.
-6. Capture screenshots for each concrete issue.
+6. Capture at least one screenshot for each concrete issue, and add a screen recording when the issue involves animation, sequencing, or interaction timing.
 7. Return findings first, then assumptions, tested flows, and residual risks.
 
 ## Reporting contract
@@ -77,7 +77,8 @@ Each finding should include:
 - what the user experiences
 - why it is a UI or UX problem
 - recommended fix direction
-- screenshot reference when available
+- clickable markdown link to at least one screenshot artifact
+- clickable markdown link to a screen recording or trace artifact when motion or sequencing matters
 
 After findings, include:
 - what was evaluated
