@@ -52,3 +52,15 @@ Each skill entry includes:
   path: .skills/bug-review/SKILL.md
   tool_compatibility: claude, codex
   scope: repository
+
+- name: ticket
+  description: Zero-friction GitHub Issue filing from a screenshot, blurb, or quick description. Automatically generates structured title, description, labels, and priority.
+  path: .skills/ticket/SKILL.md
+  tool_compatibility: claude
+  scope: repository
+
+- name: backlog
+  description: View, triage, and work from the GitHub Issues backlog. Show issues by priority, pick up the next ticket, or triage unprioritized items.
+  path: .skills/backlog/SKILL.md
+  tool_compatibility: claude
+  scope: repository
