@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brainstorm"
+  short_description: "Refine ideas into a design, spec, and plan"
+  default_prompt: "Use $brainstorm to explore this idea one question at a time, grounded in the current project, then synthesize the design in confirmed sections before producing a spec and implementation plan."
+
+policy:
+  allow_implicit_invocation: true

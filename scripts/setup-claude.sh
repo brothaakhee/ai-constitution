@@ -11,6 +11,7 @@ Claude setup
    - $ROOT_DIR/agents/claude.md
 
 2) This repo already contains portable skills in:
+   - $ROOT_DIR/.skills/brainstorm
    - $ROOT_DIR/.skills/bug-review
    - $ROOT_DIR/.skills/copy-expert
    - $ROOT_DIR/.skills/dev-loop

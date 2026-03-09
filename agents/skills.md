@@ -17,6 +17,12 @@ Each skill entry includes:
   tool_compatibility: claude, codex
   scope: repository
 
+- name: brainstorm
+  description: Guided idea exploration workflow that inspects the current project, asks one question at a time, and turns rough ideas into a confirmed design, spec, and implementation plan.
+  path: .skills/brainstorm/SKILL.md
+  tool_compatibility: claude, codex
+  scope: repository
+
 - name: orchestrator
   description: Coordination layer for multi-step or cross-cutting work that delegates scoped tasks and invokes dev-loop when needed.
   path: .skills/orchestrator/SKILL.md
