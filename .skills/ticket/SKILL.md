@@ -81,7 +81,29 @@ gh label create "priority:medium" --color "fbca04" --description "Medium priorit
 gh label create "priority:low" --color "0e8a16" --description "Low priority" 2>/dev/null || true
 ```
 
-Then create the issue:
+### Step 3a: Upload screenshot (if provided)
+
+When a screenshot is provided, save it to the repo and embed it in the issue body:
+
+1. Copy the screenshot to `.github/issue-assets/` with a descriptive kebab-case name:
+   ```bash
+   mkdir -p .github/issue-assets
+   # macOS screenshot filenames contain Unicode narrow no-break spaces — use find to handle them:
+   find <source-dir> -name "<pattern>" -exec cp {} .github/issue-assets/<descriptive-name>.png \;
+   ```
+2. Commit and push so the image is accessible via raw URL:
+   ```bash
+   git add .github/issue-assets/<name>.png
+   git commit -m "Add screenshot for issue: <short-title>"
+   git push
+   ```
+3. Reference in the issue body using:
+   ```markdown
+   ![Description](https://raw.githubusercontent.com/<owner>/<repo>/<branch>/.github/issue-assets/<name>.png)
+   ```
+
+### Step 3b: Create the issue
+
 ```bash
 gh issue create --title "Title here" --label "bug,priority:medium" --body "$(cat <<'EOF'
 ## What
@@ -89,6 +111,7 @@ gh issue create --title "Title here" --label "bug,priority:medium" --body "$(cat
 
 ## Context
 ...
+![Screenshot description](https://raw.githubusercontent.com/...)
 
 ## Expected behavior
 ...
